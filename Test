@@ -1,1 +1,34 @@
-test
+begin
+	input hot_water;
+	input tea_leaves;
+	input sugar_spoons;
+
+	if hot_water < 125 or hot_water > 375 then
+		print "Invalid hot water volume, select between 125ml to 375ml"
+		end
+	endif
+
+	if tea_leaves < 1 or tea_leaves > 3 then
+		print "Invalid tea leaves volume, select between 1g to 3g"
+		end
+	endif
+
+	if sugar_spoons < 1 or sugar_spoons > 3 then
+		print "Invalid sugar spoon volume, select between 1 to 3 spoons"
+		end
+	endif
+
+	fix_charge = 50.00
+	tea_price = tea_leaves * 2.50
+	sugar_price = sugar_spoons * 5.00
+	total_price = fix_charge + tea_price + sugar_price
+
+	print "--------Tea Bill--------"
+	print "Hot Water: ", hot_water, "ml"
+	print "Tea Leaves: ", tea_leaves, "g (Rs.", tea_price,")"
+	print "Sugar Spoons: ", sugar_spoons, "(Rs.", sugar_price, ")"
+	print "Total Price: ", total_price
+	Print "------Enjoy Your tea!------"
+end
+
+
